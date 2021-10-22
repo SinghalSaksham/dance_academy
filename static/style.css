@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* navbar */
+
+
+nav{
+    background-color: rgb(224 62 62);
+    padding: 7px 4px;
+    position: sticky;
+    top:0px;
+}
+
+nav ul{
+    display :flex;
+    /* justify-content: center; */
+    align-items: center;    
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size:10px;
+    cursor: pointer;
+}
+
+nav ul #logo img{
+    width: 44px;
+    filter: invert(1);
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    padding: 6px 15px;
+    font-family: 'IM Fell English SC', serif;
+    font-size:1.2rem;
+}
+
+nav ul li a:hover{
+    color:black;
+    font-weight:bold;
+}
+
+/* main */
+
+#main{
+    height:350px;
+    padding:10px;
+    /* background-color: yellow; */
+    background: url('../static/img/bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:15px;
+}
+
+#main h2{
+    color:white;
+    font-family: 'Varela Round', sans-serif;
+    font-size:42px;
+}
+
+#main h3{
+    color:white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+/* services */
+
+#services{
+    height:300px;
+    padding:10px;
+}
+
+#services h2{
+    text-align: center;
+    font-family: 'IM Fell English SC', serif;
+}
+
+#services .card-box{
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+}
+
+#services .card-box .card{
+    border: 2px solid black;
+    border-radius: 5px;
+    width:25%;
+    margin:3px 8px;
+    height:225px;
+    padding:5px;
+}
+
+#services .content{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#services .content img{
+    width:126px;
+}
+
+#services .card-box .card h3{
+    text-align: center;
+    margin: 5px;
+}
+
+/* sponsors */
+
+#sponsors{
+    height:300px;
+    padding:10px;
+    background-color: rgb(248 213 218);
+}
+
+#sponsors h2{
+    text-align: center;
+    font-family: 'IM Fell English SC', serif;
+}
+
+#spons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#spons img{
+    width:162px;
+    margin:10px;
+}
+
+
+/* footer */
+#footer{
+    height:75px;
+    padding:25px;
+    background-color: black;
+    color:white;
+    text-align: center;
+}

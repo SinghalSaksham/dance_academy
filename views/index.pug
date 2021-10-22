@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title Best Dance Academy | Saksham Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav
+        ul
+            div#logo
+                img(src="../static/img/logo.png")
+                |SDA
+            li 
+                a(href="/") Home
+            li 
+                a(href="/") About Us
+            li 
+                a(href="/") Services
+            li 
+                a(href="/") Class Info
+            li 
+                a(href="/") Contact Us
+
+    section#main 
+        h2 Welcome to Saksham's Dance Academy
+        h3 Eat Dance Sleep Repeat
+    
+    section#services 
+        h2 Our Services 
+        div.card-box
+            div.card
+                h3 Dance perfection 
+                div.content
+                    img(src="../static/img/dance.png")
+                    p This is the best dance academy of the world
+            div.card
+                h3 Dance the way you like
+                div.content
+                    img(src="../static/img/dance2.png")
+                    p This is the best dance academy of the world
+            div.card
+                h3 Expert teaching
+                div.content
+                    img(src="../static/img/dance3.png")
+                    p This is the best dance academy of the world
+    section#sponsors 
+        h2 Our Sponsors 
+        div#spons
+            img(src="../static/img/logo1.png")
+            img(src="../static/img/logo2.png")
+            img(src="../static/img/logo3.png")
+            img(src="../static/img/logo4.png")
+
+    footer#footer
+        |Copyright © 2021 SakshamDanceAcademy.com | All rights reserved
+    script
+      include ../static/script.js

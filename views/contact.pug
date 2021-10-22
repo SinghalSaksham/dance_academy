@@ -1,0 +1,19 @@
+extends base.pug
+
+block scripts
+    script(src='../static/script.js')
+
+block style
+    style 
+        include ../static/style.css
+        include ../static/contact_style.css
+block content
+    div.container
+        form.form-grp(method='post' action='/contact')
+            input#Name(type='text' name='Name' placeholder='Enter your name')
+            input#Phone(type='text' name='Phone' placeholder='Enter your Phone Number')
+            input#Age(type='text' name='Age' placeholder='Enter your Age')
+            input#Gender(type='text' name='Gender' placeholder='Enter your Gender')
+            input#address(type='text' name='address' placeholder='Enter your Address')
+            input#desc(type='text' name='desc' placeholder='Enter your desc')
+            input#btn(type='submit' value="submit")
