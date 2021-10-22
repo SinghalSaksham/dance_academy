@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 80;
+const port = process.env.PORT || 80;
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/DanceContact', {useNewUrlParser: true, useUnifiedTopology: true});
