@@ -4,8 +4,9 @@ const app = express();
 const port = process.env.PORT || 80;
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/DanceContact', {useNewUrlParser: true, useUnifiedTopology: true});
-
+const mongo_url = 'mongodb+srv://saksham:<saksham>@sakshamdanceacademy.lxw0a.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+mongoose.connect(mongo_url, {useNewUrlParser: true, useUnifiedTopology: true});
+// 'mongodb://localhost:27017/DanceContact'
 app.use(express.json());
 app.use(express.urlencoded());
 
